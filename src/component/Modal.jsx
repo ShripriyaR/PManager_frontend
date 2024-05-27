@@ -11,7 +11,6 @@ function DeleteAppModal(props){
         const req = {
             "username": props.username,
             "appName": appName,
-
         }
         console.log("entered handleDelete : "  +appName);
         webClient.post(API.ENDPOINT_DELETE_APP, req,{ timeout: 5000 })
